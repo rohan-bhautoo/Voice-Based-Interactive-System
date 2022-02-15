@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Support Assistant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body id="page">
+    <div class="navbar-area">
+        <div class="container-fluid">
+            <div class="menu">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+
+            <div id="navigationMenu" class="overlay">
+                <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <h1 class="helpTitle">Help section</h1>
+                    <table class="table tg">
+                        <thead>
+                        <tr>
+                            <th class="tg-0lax">Action</th>
+                            <th class="tg-0lax">Command</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="tg-0lax">Email<br></td>
+                            <td class="tg-0lax">"Check email", "Login to email address", "Open email"</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">Grades and Progression</td>
+                            <td class="tg-0lax">"View grades", "Check progression", "Show me my course progress."</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">Unihub</td>
+                            <td class="tg-0lax">"Login to unihub", "Open my learning", "Open university website"</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">Exam Timetable</td>
+                            <td class="tg-0lax">"View exams period", "Timetable"</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">Extenuating circumstances</td>
+                            <td class="tg-0lax">"How to obtain an extension?", "Extend my deadline", "Assessment extension"</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">Useful websites</td>
+                            <td class="tg-0lax">"Learn programming online", "Best programming sites", "Recommend site to learn coding"</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">Help section</td>
+                            <td class="tg-0lax">"Open help section", "I need help", "Open navigation"</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">Stop recording</td>
+                            <td class="tg-0lax">"Stop", "Stop microphone", "Stop listening"</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <h1 class="page-title">
+                    Support System Assistant
+                </h1>
+                <div class="description">
+                    <p style="font-size: 13pt;">The support system is designed to support Computer Science students to
+                        access information relevant to their studies and to university life</p>
+                </div>
+                <div class="voiceCommand">
+                    <button id="speakBtn" class="btn Speak" type="button" onclick="activateSpeech()"><img class="img-fluid" src="../Img/microphone.png" width="150" height="150" alt="Speak Now"></button>
+                    <p id="info">Click on the icon to activate voice commands.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chatContainer" id="scrollBox">
+            <div class="texts" id="message">
+                <p>Hey there 👋, I'm your Support System assistant - at your service 24/7.</p>
+                <p>
+                    How may i help you today?
+                    <br>
+                    - Check emails
+                    <br>
+                    - View grades progression
+                    <br>
+                    - Login to MyLearning website
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/webSpeech.js"></script>
+    <script src="../js/chatScript.js"></script>
+    <script src="../js/updateVUI.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("navigationMenu").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("navigationMenu").style.width = "0%";
+        }
+    </script>
+</body>
+<footer>
+    <p>Bhautoo Rohan M00679106 | CST3140 Novel Interaction Technologies CW2</p>
+</footer>
+</html>

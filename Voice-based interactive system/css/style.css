@@ -1,0 +1,202 @@
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+/* Import Roboto fonts from folder */
+@font-face {
+  font-family: Roboto;
+  src: url("../Fonts/Roboto/Roboto-Regular.ttf");
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f7f7f7 !important;
+}
+
+.menu span {
+  float: left;
+  padding: 10px 20px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay-content .helpTitle {
+  padding: 8px;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+}
+
+.overlay-content .tg {
+  border-collapse: collapse;
+  border-color: #ccc;
+  border-spacing: 0;
+  width: 50%;
+  margin: auto;
+}
+
+.overlay-content .tg td {
+  background-color: #424242;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffff;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.overlay-content .tg th {
+  background-color: #f0f0f0;
+  border-color:#ccc;
+  border-style:solid;
+  border-width:1px;
+  color:#333;
+  font-size:14px;
+  font-weight:normal;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal
+}
+
+.overlay-content .tg .tg-0lax {
+  text-align: left;
+  vertical-align: top;
+}
+
+.overlay .closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.overlay .closeBtn:hover {
+  opacity: .5;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  outline: none;
+  text-decoration: none !important;
+}
+
+.content {
+  padding: 20px;
+}
+
+h1.page-title {
+  color: #000000;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.description,
+.voiceCommand {
+  text-align: center;
+}
+
+.btn {
+  outline: none !important;
+  box-shadow: none;
+}
+
+#speakBtn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.chatContainer {
+  overflow: auto;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  height: 377px;
+  overflow-y: scroll;
+  padding: 20px;
+  box-shadow: 1px 0 4px hsla(0,0%,9%,0.3);
+  background-color: #f4f4f4;;
+}
+
+.texts p {
+  font-size: 14px;
+  float: left;
+  color: black;
+  clear: both;
+  text-align: left;
+  width: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-left: 2px solid #1a80b6;
+}
+
+.texts p.sent {
+  background-color: #393939;
+  border-left: 0;
+  color: white;
+  text-align: right;
+  float: right;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #c6c6c6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8d8d8d;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4c4c4c;
+}
+
+footer {
+  font-size: 13px;
+  text-align: center;
+}
